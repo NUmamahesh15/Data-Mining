@@ -1,0 +1,1076 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -I -N 20 -T 0 -C 0.9 -D 0.05 -U 0.15 -M 0.1 -S -1.0 -c -1
+Relation:     adult_pre1-weka.filters.unsupervised.attribute.NumericToNominal-R16-weka.filters.unsupervised.attribute.Discretize-B4-M-1.0-R1-precision6-weka.filters.unsupervised.attribute.ReplaceMissingValues-unset-class-temporarily-weka.filters.unsupervised.attribute.NumericToNominal-R5-weka.filters.unsupervised.attribute.Remove-R3-4,8-9,14-15-weka.filters.unsupervised.attribute.Discretize-B3-M-1.0-R7-9-precision6
+Instances:    32561
+Attributes:   10
+              age
+              workclass
+              education.num
+              marital.status
+              occupation
+              sex
+              capital.gain
+              capital.loss
+              hours.per.week
+              income_nominal
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.1 (3256 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 18
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 23
+
+Large Itemsets L(1):
+age=0_25 14925
+age=26_40 12713
+age=41_60 4455
+workclass=Private 24532
+education.num=9 10501
+education.num=10 7291
+education.num=13 5355
+marital.status=Single 17144
+marital.status=Married 15417
+occupation=Exec-managerial 4066
+occupation=Prof-specialty 5983
+occupation=Other-service 3295
+occupation=Adm-clerical 3770
+occupation=Craft-repair 4099
+occupation=Sales 3650
+sex=Female 10771
+sex=Male 21790
+capital.gain=0_33333 32395
+capital.loss=0_1452 31127
+hours.per.week=0_33 5555
+hours.per.week=33_66 26201
+income_nominal=0 24720
+income_nominal=1 7841
+
+Size of set of large itemsets L(2): 110
+
+Large Itemsets L(2):
+age=0_25 workclass=Private 12529
+age=0_25 education.num=9 4785
+age=0_25 education.num=10 3934
+age=0_25 marital.status=Single 10310
+age=0_25 marital.status=Married 4615
+age=0_25 sex=Female 5554
+age=0_25 sex=Male 9371
+age=0_25 capital.gain=0_33333 14897
+age=0_25 capital.loss=0_1452 14442
+age=0_25 hours.per.week=0_33 3294
+age=0_25 hours.per.week=33_66 11339
+age=0_25 income_nominal=0 13220
+age=26_40 workclass=Private 8753
+age=26_40 education.num=9 4045
+age=26_40 marital.status=Single 5002
+age=26_40 marital.status=Married 7711
+age=26_40 sex=Female 3758
+age=26_40 sex=Male 8955
+age=26_40 capital.gain=0_33333 12612
+age=26_40 capital.loss=0_1452 12013
+age=26_40 hours.per.week=33_66 11309
+age=26_40 income_nominal=0 8052
+age=26_40 income_nominal=1 4661
+age=41_60 capital.gain=0_33333 4421
+age=41_60 capital.loss=0_1452 4226
+age=41_60 hours.per.week=33_66 3391
+workclass=Private education.num=9 8312
+workclass=Private education.num=10 5608
+workclass=Private education.num=13 3724
+workclass=Private marital.status=Single 13816
+workclass=Private marital.status=Married 10716
+workclass=Private occupation=Prof-specialty 4149
+workclass=Private sex=Female 8591
+workclass=Private sex=Male 15941
+workclass=Private capital.gain=0_33333 24441
+workclass=Private capital.loss=0_1452 23553
+workclass=Private hours.per.week=0_33 4482
+workclass=Private hours.per.week=33_66 19631
+workclass=Private income_nominal=0 19378
+workclass=Private income_nominal=1 5154
+education.num=9 marital.status=Single 5522
+education.num=9 marital.status=Married 4979
+education.num=9 sex=Female 3390
+education.num=9 sex=Male 7111
+education.num=9 capital.gain=0_33333 10475
+education.num=9 capital.loss=0_1452 10121
+education.num=9 hours.per.week=33_66 8700
+education.num=9 income_nominal=0 8826
+education.num=10 marital.status=Single 4394
+education.num=10 sex=Male 4485
+education.num=10 capital.gain=0_33333 7276
+education.num=10 capital.loss=0_1452 7021
+education.num=10 hours.per.week=33_66 5496
+education.num=10 income_nominal=0 5904
+education.num=13 sex=Male 3736
+education.num=13 capital.gain=0_33333 5314
+education.num=13 capital.loss=0_1452 5040
+education.num=13 hours.per.week=33_66 4637
+marital.status=Single sex=Female 8895
+marital.status=Single sex=Male 8249
+marital.status=Single capital.gain=0_33333 17113
+marital.status=Single capital.loss=0_1452 16672
+marital.status=Single hours.per.week=0_33 4070
+marital.status=Single hours.per.week=33_66 12784
+marital.status=Single income_nominal=0 16039
+marital.status=Married sex=Male 13541
+marital.status=Married capital.gain=0_33333 15282
+marital.status=Married capital.loss=0_1452 14455
+marital.status=Married hours.per.week=33_66 13417
+marital.status=Married income_nominal=0 8681
+marital.status=Married income_nominal=1 6736
+occupation=Exec-managerial capital.gain=0_33333 4023
+occupation=Exec-managerial capital.loss=0_1452 3790
+occupation=Exec-managerial hours.per.week=33_66 3673
+occupation=Prof-specialty sex=Male 3627
+occupation=Prof-specialty capital.gain=0_33333 5910
+occupation=Prof-specialty capital.loss=0_1452 5652
+occupation=Prof-specialty hours.per.week=33_66 4488
+occupation=Prof-specialty income_nominal=0 3933
+occupation=Other-service capital.gain=0_33333 3292
+occupation=Adm-clerical capital.gain=0_33333 3764
+occupation=Adm-clerical capital.loss=0_1452 3655
+occupation=Adm-clerical income_nominal=0 3263
+occupation=Craft-repair sex=Male 3877
+occupation=Craft-repair capital.gain=0_33333 4091
+occupation=Craft-repair capital.loss=0_1452 3909
+occupation=Craft-repair hours.per.week=33_66 3780
+occupation=Sales capital.gain=0_33333 3625
+occupation=Sales capital.loss=0_1452 3467
+sex=Female capital.gain=0_33333 10747
+sex=Female capital.loss=0_1452 10450
+sex=Female hours.per.week=33_66 7733
+sex=Female income_nominal=0 9592
+sex=Male capital.gain=0_33333 21648
+sex=Male capital.loss=0_1452 20677
+sex=Male hours.per.week=33_66 18468
+sex=Male income_nominal=0 15128
+sex=Male income_nominal=1 6662
+capital.gain=0_33333 capital.loss=0_1452 30961
+capital.gain=0_33333 hours.per.week=0_33 5542
+capital.gain=0_33333 hours.per.week=33_66 26064
+capital.gain=0_33333 income_nominal=0 24713
+capital.gain=0_33333 income_nominal=1 7682
+capital.loss=0_1452 hours.per.week=0_33 5405
+capital.loss=0_1452 hours.per.week=33_66 24969
+capital.loss=0_1452 income_nominal=0 24057
+capital.loss=0_1452 income_nominal=1 7070
+hours.per.week=0_33 income_nominal=0 5170
+hours.per.week=33_66 income_nominal=0 19029
+hours.per.week=33_66 income_nominal=1 7172
+
+Size of set of large itemsets L(3): 246
+
+Large Itemsets L(3):
+age=0_25 workclass=Private education.num=9 4129
+age=0_25 workclass=Private education.num=10 3341
+age=0_25 workclass=Private marital.status=Single 8890
+age=0_25 workclass=Private marital.status=Married 3639
+age=0_25 workclass=Private sex=Female 4819
+age=0_25 workclass=Private sex=Male 7710
+age=0_25 workclass=Private capital.gain=0_33333 12507
+age=0_25 workclass=Private capital.loss=0_1452 12137
+age=0_25 workclass=Private hours.per.week=33_66 9441
+age=0_25 workclass=Private income_nominal=0 11248
+age=0_25 education.num=9 capital.gain=0_33333 4776
+age=0_25 education.num=9 capital.loss=0_1452 4645
+age=0_25 education.num=9 hours.per.week=33_66 3950
+age=0_25 education.num=9 income_nominal=0 4442
+age=0_25 education.num=10 capital.gain=0_33333 3929
+age=0_25 education.num=10 capital.loss=0_1452 3819
+age=0_25 education.num=10 income_nominal=0 3632
+age=0_25 marital.status=Single sex=Female 4795
+age=0_25 marital.status=Single sex=Male 5515
+age=0_25 marital.status=Single capital.gain=0_33333 10296
+age=0_25 marital.status=Single capital.loss=0_1452 10066
+age=0_25 marital.status=Single hours.per.week=33_66 7220
+age=0_25 marital.status=Single income_nominal=0 9998
+age=0_25 marital.status=Married sex=Male 3856
+age=0_25 marital.status=Married capital.gain=0_33333 4601
+age=0_25 marital.status=Married capital.loss=0_1452 4376
+age=0_25 marital.status=Married hours.per.week=33_66 4119
+age=0_25 sex=Female capital.gain=0_33333 5549
+age=0_25 sex=Female capital.loss=0_1452 5406
+age=0_25 sex=Female hours.per.week=33_66 3709
+age=0_25 sex=Female income_nominal=0 5216
+age=0_25 sex=Male capital.gain=0_33333 9348
+age=0_25 sex=Male capital.loss=0_1452 9036
+age=0_25 sex=Male hours.per.week=33_66 7630
+age=0_25 sex=Male income_nominal=0 8004
+age=0_25 capital.gain=0_33333 capital.loss=0_1452 14414
+age=0_25 capital.gain=0_33333 hours.per.week=0_33 3288
+age=0_25 capital.gain=0_33333 hours.per.week=33_66 11318
+age=0_25 capital.gain=0_33333 income_nominal=0 13215
+age=0_25 capital.loss=0_1452 hours.per.week=33_66 10954
+age=0_25 capital.loss=0_1452 income_nominal=0 12889
+age=0_25 hours.per.week=33_66 income_nominal=0 9765
+age=26_40 workclass=Private marital.status=Single 3610
+age=26_40 workclass=Private marital.status=Married 5143
+age=26_40 workclass=Private sex=Male 6029
+age=26_40 workclass=Private capital.gain=0_33333 8699
+age=26_40 workclass=Private capital.loss=0_1452 8303
+age=26_40 workclass=Private hours.per.week=33_66 7870
+age=26_40 workclass=Private income_nominal=0 5747
+age=26_40 education.num=9 capital.gain=0_33333 4034
+age=26_40 education.num=9 capital.loss=0_1452 3879
+age=26_40 education.num=9 hours.per.week=33_66 3565
+age=26_40 marital.status=Single capital.gain=0_33333 4990
+age=26_40 marital.status=Single capital.loss=0_1452 4835
+age=26_40 marital.status=Single hours.per.week=33_66 4346
+age=26_40 marital.status=Single income_nominal=0 4401
+age=26_40 marital.status=Married sex=Male 6822
+age=26_40 marital.status=Married capital.gain=0_33333 7622
+age=26_40 marital.status=Married capital.loss=0_1452 7178
+age=26_40 marital.status=Married hours.per.week=33_66 6963
+age=26_40 marital.status=Married income_nominal=0 3651
+age=26_40 marital.status=Married income_nominal=1 4060
+age=26_40 sex=Female capital.gain=0_33333 3743
+age=26_40 sex=Female capital.loss=0_1452 3632
+age=26_40 sex=Male capital.gain=0_33333 8869
+age=26_40 sex=Male capital.loss=0_1452 8381
+age=26_40 sex=Male hours.per.week=33_66 8215
+age=26_40 sex=Male income_nominal=0 4970
+age=26_40 sex=Male income_nominal=1 3985
+age=26_40 capital.gain=0_33333 capital.loss=0_1452 11912
+age=26_40 capital.gain=0_33333 hours.per.week=33_66 11227
+age=26_40 capital.gain=0_33333 income_nominal=0 8052
+age=26_40 capital.gain=0_33333 income_nominal=1 4560
+age=26_40 capital.loss=0_1452 hours.per.week=33_66 10666
+age=26_40 capital.loss=0_1452 income_nominal=0 7824
+age=26_40 capital.loss=0_1452 income_nominal=1 4189
+age=26_40 hours.per.week=33_66 income_nominal=0 6984
+age=26_40 hours.per.week=33_66 income_nominal=1 4325
+age=41_60 capital.gain=0_33333 capital.loss=0_1452 4192
+age=41_60 capital.gain=0_33333 hours.per.week=33_66 3359
+workclass=Private education.num=9 marital.status=Single 4664
+workclass=Private education.num=9 marital.status=Married 3648
+workclass=Private education.num=9 sex=Male 5446
+workclass=Private education.num=9 capital.gain=0_33333 8299
+workclass=Private education.num=9 capital.loss=0_1452 8038
+workclass=Private education.num=9 hours.per.week=33_66 6900
+workclass=Private education.num=9 income_nominal=0 7147
+workclass=Private education.num=10 marital.status=Single 3594
+workclass=Private education.num=10 sex=Male 3321
+workclass=Private education.num=10 capital.gain=0_33333 5597
+workclass=Private education.num=10 capital.loss=0_1452 5413
+workclass=Private education.num=10 hours.per.week=33_66 4172
+workclass=Private education.num=10 income_nominal=0 4650
+workclass=Private education.num=13 capital.gain=0_33333 3699
+workclass=Private education.num=13 capital.loss=0_1452 3503
+workclass=Private marital.status=Single sex=Female 7207
+workclass=Private marital.status=Single sex=Male 6609
+workclass=Private marital.status=Single capital.gain=0_33333 13800
+workclass=Private marital.status=Single capital.loss=0_1452 13453
+workclass=Private marital.status=Single hours.per.week=0_33 3481
+workclass=Private marital.status=Single hours.per.week=33_66 10145
+workclass=Private marital.status=Single income_nominal=0 13081
+workclass=Private marital.status=Married sex=Male 9332
+workclass=Private marital.status=Married capital.gain=0_33333 10641
+workclass=Private marital.status=Married capital.loss=0_1452 10100
+workclass=Private marital.status=Married hours.per.week=33_66 9486
+workclass=Private marital.status=Married income_nominal=0 6297
+workclass=Private marital.status=Married income_nominal=1 4419
+workclass=Private occupation=Prof-specialty capital.gain=0_33333 4111
+workclass=Private occupation=Prof-specialty capital.loss=0_1452 3952
+workclass=Private sex=Female capital.gain=0_33333 8577
+workclass=Private sex=Female capital.loss=0_1452 8350
+workclass=Private sex=Female hours.per.week=33_66 6055
+workclass=Private sex=Female income_nominal=0 7813
+workclass=Private sex=Male capital.gain=0_33333 15864
+workclass=Private sex=Male capital.loss=0_1452 15203
+workclass=Private sex=Male hours.per.week=33_66 13576
+workclass=Private sex=Male income_nominal=0 11565
+workclass=Private sex=Male income_nominal=1 4376
+workclass=Private capital.gain=0_33333 capital.loss=0_1452 23462
+workclass=Private capital.gain=0_33333 hours.per.week=0_33 4473
+workclass=Private capital.gain=0_33333 hours.per.week=33_66 19553
+workclass=Private capital.gain=0_33333 income_nominal=0 19373
+workclass=Private capital.gain=0_33333 income_nominal=1 5068
+workclass=Private capital.loss=0_1452 hours.per.week=0_33 4372
+workclass=Private capital.loss=0_1452 hours.per.week=33_66 18792
+workclass=Private capital.loss=0_1452 income_nominal=0 18887
+workclass=Private capital.loss=0_1452 income_nominal=1 4666
+workclass=Private hours.per.week=0_33 income_nominal=0 4247
+workclass=Private hours.per.week=33_66 income_nominal=0 14856
+workclass=Private hours.per.week=33_66 income_nominal=1 4775
+education.num=9 marital.status=Single capital.gain=0_33333 5514
+education.num=9 marital.status=Single capital.loss=0_1452 5379
+education.num=9 marital.status=Single hours.per.week=33_66 4370
+education.num=9 marital.status=Single income_nominal=0 5364
+education.num=9 marital.status=Married sex=Male 4375
+education.num=9 marital.status=Married capital.gain=0_33333 4961
+education.num=9 marital.status=Married capital.loss=0_1452 4742
+education.num=9 marital.status=Married hours.per.week=33_66 4330
+education.num=9 marital.status=Married income_nominal=0 3462
+education.num=9 sex=Female capital.gain=0_33333 3384
+education.num=9 sex=Female capital.loss=0_1452 3301
+education.num=9 sex=Male capital.gain=0_33333 7091
+education.num=9 sex=Male capital.loss=0_1452 6820
+education.num=9 sex=Male hours.per.week=33_66 6182
+education.num=9 sex=Male income_nominal=0 5662
+education.num=9 capital.gain=0_33333 capital.loss=0_1452 10095
+education.num=9 capital.gain=0_33333 hours.per.week=33_66 8676
+education.num=9 capital.gain=0_33333 income_nominal=0 8823
+education.num=9 capital.loss=0_1452 hours.per.week=33_66 8376
+education.num=9 capital.loss=0_1452 income_nominal=0 8585
+education.num=9 hours.per.week=33_66 income_nominal=0 7156
+education.num=10 marital.status=Single capital.gain=0_33333 4389
+education.num=10 marital.status=Single capital.loss=0_1452 4291
+education.num=10 marital.status=Single income_nominal=0 4238
+education.num=10 sex=Male capital.gain=0_33333 4473
+education.num=10 sex=Male capital.loss=0_1452 4281
+education.num=10 sex=Male hours.per.week=33_66 3645
+education.num=10 sex=Male income_nominal=0 3295
+education.num=10 capital.gain=0_33333 capital.loss=0_1452 7006
+education.num=10 capital.gain=0_33333 hours.per.week=33_66 5485
+education.num=10 capital.gain=0_33333 income_nominal=0 5903
+education.num=10 capital.loss=0_1452 hours.per.week=33_66 5270
+education.num=10 capital.loss=0_1452 income_nominal=0 5748
+education.num=10 hours.per.week=33_66 income_nominal=0 4232
+education.num=13 sex=Male capital.gain=0_33333 3703
+education.num=13 sex=Male capital.loss=0_1452 3477
+education.num=13 sex=Male hours.per.week=33_66 3327
+education.num=13 capital.gain=0_33333 capital.loss=0_1452 4999
+education.num=13 capital.gain=0_33333 hours.per.week=33_66 4605
+education.num=13 capital.loss=0_1452 hours.per.week=33_66 4352
+marital.status=Single sex=Female capital.gain=0_33333 8882
+marital.status=Single sex=Female capital.loss=0_1452 8678
+marital.status=Single sex=Female hours.per.week=33_66 6349
+marital.status=Single sex=Female income_nominal=0 8487
+marital.status=Single sex=Male capital.gain=0_33333 8231
+marital.status=Single sex=Male capital.loss=0_1452 7994
+marital.status=Single sex=Male hours.per.week=33_66 6435
+marital.status=Single sex=Male income_nominal=0 7552
+marital.status=Single capital.gain=0_33333 capital.loss=0_1452 16641
+marital.status=Single capital.gain=0_33333 hours.per.week=0_33 4063
+marital.status=Single capital.gain=0_33333 hours.per.week=33_66 12763
+marital.status=Single capital.gain=0_33333 income_nominal=0 16034
+marital.status=Single capital.loss=0_1452 hours.per.week=0_33 3982
+marital.status=Single capital.loss=0_1452 hours.per.week=33_66 12412
+marital.status=Single capital.loss=0_1452 income_nominal=0 15652
+marital.status=Single hours.per.week=0_33 income_nominal=0 4028
+marital.status=Single hours.per.week=33_66 income_nominal=0 11763
+marital.status=Married sex=Male capital.gain=0_33333 13417
+marital.status=Married sex=Male capital.loss=0_1452 12683
+marital.status=Married sex=Male hours.per.week=33_66 12033
+marital.status=Married sex=Male income_nominal=0 7576
+marital.status=Married sex=Male income_nominal=1 5965
+marital.status=Married capital.gain=0_33333 capital.loss=0_1452 14320
+marital.status=Married capital.gain=0_33333 hours.per.week=33_66 13301
+marital.status=Married capital.gain=0_33333 income_nominal=0 8679
+marital.status=Married capital.gain=0_33333 income_nominal=1 6603
+marital.status=Married capital.loss=0_1452 hours.per.week=33_66 12557
+marital.status=Married capital.loss=0_1452 income_nominal=0 8405
+marital.status=Married capital.loss=0_1452 income_nominal=1 6050
+marital.status=Married hours.per.week=33_66 income_nominal=0 7266
+marital.status=Married hours.per.week=33_66 income_nominal=1 6151
+occupation=Exec-managerial capital.gain=0_33333 capital.loss=0_1452 3747
+occupation=Exec-managerial capital.gain=0_33333 hours.per.week=33_66 3635
+occupation=Exec-managerial capital.loss=0_1452 hours.per.week=33_66 3420
+occupation=Prof-specialty sex=Male capital.gain=0_33333 3563
+occupation=Prof-specialty sex=Male capital.loss=0_1452 3400
+occupation=Prof-specialty capital.gain=0_33333 capital.loss=0_1452 5579
+occupation=Prof-specialty capital.gain=0_33333 hours.per.week=33_66 4429
+occupation=Prof-specialty capital.gain=0_33333 income_nominal=0 3931
+occupation=Prof-specialty capital.loss=0_1452 hours.per.week=33_66 4209
+occupation=Prof-specialty capital.loss=0_1452 income_nominal=0 3824
+occupation=Adm-clerical capital.gain=0_33333 capital.loss=0_1452 3649
+occupation=Adm-clerical capital.gain=0_33333 income_nominal=0 3263
+occupation=Craft-repair sex=Male capital.gain=0_33333 3870
+occupation=Craft-repair sex=Male capital.loss=0_1452 3696
+occupation=Craft-repair sex=Male hours.per.week=33_66 3584
+occupation=Craft-repair capital.gain=0_33333 capital.loss=0_1452 3901
+occupation=Craft-repair capital.gain=0_33333 hours.per.week=33_66 3772
+occupation=Craft-repair capital.loss=0_1452 hours.per.week=33_66 3603
+occupation=Sales capital.gain=0_33333 capital.loss=0_1452 3442
+sex=Female capital.gain=0_33333 capital.loss=0_1452 10426
+sex=Female capital.gain=0_33333 hours.per.week=33_66 7715
+sex=Female capital.gain=0_33333 income_nominal=0 9590
+sex=Female capital.loss=0_1452 hours.per.week=33_66 7503
+sex=Female capital.loss=0_1452 income_nominal=0 9372
+sex=Female hours.per.week=33_66 income_nominal=0 6752
+sex=Male capital.gain=0_33333 capital.loss=0_1452 20535
+sex=Male capital.gain=0_33333 hours.per.week=33_66 18349
+sex=Male capital.gain=0_33333 income_nominal=0 15123
+sex=Male capital.gain=0_33333 income_nominal=1 6525
+sex=Male capital.loss=0_1452 hours.per.week=33_66 17466
+sex=Male capital.loss=0_1452 income_nominal=0 14685
+sex=Male capital.loss=0_1452 income_nominal=1 5992
+sex=Male hours.per.week=33_66 income_nominal=0 12277
+sex=Male hours.per.week=33_66 income_nominal=1 6191
+capital.gain=0_33333 capital.loss=0_1452 hours.per.week=0_33 5392
+capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 24832
+capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 24050
+capital.gain=0_33333 capital.loss=0_1452 income_nominal=1 6911
+capital.gain=0_33333 hours.per.week=0_33 income_nominal=0 5165
+capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 19027
+capital.gain=0_33333 hours.per.week=33_66 income_nominal=1 7037
+capital.loss=0_1452 hours.per.week=0_33 income_nominal=0 5058
+capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 18494
+capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 6475
+
+Size of set of large itemsets L(4): 305
+
+Large Itemsets L(4):
+age=0_25 workclass=Private education.num=9 capital.gain=0_33333 4124
+age=0_25 workclass=Private education.num=9 capital.loss=0_1452 4015
+age=0_25 workclass=Private education.num=9 hours.per.week=33_66 3388
+age=0_25 workclass=Private education.num=9 income_nominal=0 3883
+age=0_25 workclass=Private education.num=10 capital.gain=0_33333 3337
+age=0_25 workclass=Private marital.status=Single sex=Female 4181
+age=0_25 workclass=Private marital.status=Single sex=Male 4709
+age=0_25 workclass=Private marital.status=Single capital.gain=0_33333 8880
+age=0_25 workclass=Private marital.status=Single capital.loss=0_1452 8680
+age=0_25 workclass=Private marital.status=Single hours.per.week=33_66 6165
+age=0_25 workclass=Private marital.status=Single income_nominal=0 8651
+age=0_25 workclass=Private marital.status=Married capital.gain=0_33333 3627
+age=0_25 workclass=Private marital.status=Married capital.loss=0_1452 3457
+age=0_25 workclass=Private marital.status=Married hours.per.week=33_66 3276
+age=0_25 workclass=Private sex=Female capital.gain=0_33333 4815
+age=0_25 workclass=Private sex=Female capital.loss=0_1452 4688
+age=0_25 workclass=Private sex=Female income_nominal=0 4554
+age=0_25 workclass=Private sex=Male capital.gain=0_33333 7692
+age=0_25 workclass=Private sex=Male capital.loss=0_1452 7449
+age=0_25 workclass=Private sex=Male hours.per.week=33_66 6264
+age=0_25 workclass=Private sex=Male income_nominal=0 6694
+age=0_25 workclass=Private capital.gain=0_33333 capital.loss=0_1452 12115
+age=0_25 workclass=Private capital.gain=0_33333 hours.per.week=33_66 9426
+age=0_25 workclass=Private capital.gain=0_33333 income_nominal=0 11243
+age=0_25 workclass=Private capital.loss=0_1452 hours.per.week=33_66 9133
+age=0_25 workclass=Private capital.loss=0_1452 income_nominal=0 10970
+age=0_25 workclass=Private hours.per.week=33_66 income_nominal=0 8255
+age=0_25 education.num=9 capital.gain=0_33333 capital.loss=0_1452 4636
+age=0_25 education.num=9 capital.gain=0_33333 hours.per.week=33_66 3943
+age=0_25 education.num=9 capital.gain=0_33333 income_nominal=0 4440
+age=0_25 education.num=9 capital.loss=0_1452 hours.per.week=33_66 3842
+age=0_25 education.num=9 capital.loss=0_1452 income_nominal=0 4332
+age=0_25 education.num=9 hours.per.week=33_66 income_nominal=0 3635
+age=0_25 education.num=10 capital.gain=0_33333 capital.loss=0_1452 3814
+age=0_25 education.num=10 capital.gain=0_33333 income_nominal=0 3631
+age=0_25 education.num=10 capital.loss=0_1452 income_nominal=0 3535
+age=0_25 marital.status=Single sex=Female capital.gain=0_33333 4790
+age=0_25 marital.status=Single sex=Female capital.loss=0_1452 4688
+age=0_25 marital.status=Single sex=Female income_nominal=0 4695
+age=0_25 marital.status=Single sex=Male capital.gain=0_33333 5506
+age=0_25 marital.status=Single sex=Male capital.loss=0_1452 5378
+age=0_25 marital.status=Single sex=Male hours.per.week=33_66 4082
+age=0_25 marital.status=Single sex=Male income_nominal=0 5303
+age=0_25 marital.status=Single capital.gain=0_33333 capital.loss=0_1452 10052
+age=0_25 marital.status=Single capital.gain=0_33333 hours.per.week=33_66 7212
+age=0_25 marital.status=Single capital.gain=0_33333 income_nominal=0 9994
+age=0_25 marital.status=Single capital.loss=0_1452 hours.per.week=33_66 7045
+age=0_25 marital.status=Single capital.loss=0_1452 income_nominal=0 9774
+age=0_25 marital.status=Single hours.per.week=33_66 income_nominal=0 6925
+age=0_25 marital.status=Married sex=Male capital.gain=0_33333 3842
+age=0_25 marital.status=Married sex=Male capital.loss=0_1452 3658
+age=0_25 marital.status=Married sex=Male hours.per.week=33_66 3548
+age=0_25 marital.status=Married capital.gain=0_33333 capital.loss=0_1452 4362
+age=0_25 marital.status=Married capital.gain=0_33333 hours.per.week=33_66 4106
+age=0_25 marital.status=Married capital.loss=0_1452 hours.per.week=33_66 3909
+age=0_25 sex=Female capital.gain=0_33333 capital.loss=0_1452 5401
+age=0_25 sex=Female capital.gain=0_33333 hours.per.week=33_66 3707
+age=0_25 sex=Female capital.gain=0_33333 income_nominal=0 5214
+age=0_25 sex=Female capital.loss=0_1452 hours.per.week=33_66 3613
+age=0_25 sex=Female capital.loss=0_1452 income_nominal=0 5095
+age=0_25 sex=Female hours.per.week=33_66 income_nominal=0 3421
+age=0_25 sex=Male capital.gain=0_33333 capital.loss=0_1452 9013
+age=0_25 sex=Male capital.gain=0_33333 hours.per.week=33_66 7611
+age=0_25 sex=Male capital.gain=0_33333 income_nominal=0 8001
+age=0_25 sex=Male capital.loss=0_1452 hours.per.week=33_66 7341
+age=0_25 sex=Male capital.loss=0_1452 income_nominal=0 7794
+age=0_25 sex=Male hours.per.week=33_66 income_nominal=0 6344
+age=0_25 capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 10933
+age=0_25 capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 12884
+age=0_25 capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 9765
+age=0_25 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 9518
+age=26_40 workclass=Private marital.status=Single capital.gain=0_33333 3605
+age=26_40 workclass=Private marital.status=Single capital.loss=0_1452 3492
+age=26_40 workclass=Private marital.status=Married sex=Male 4542
+age=26_40 workclass=Private marital.status=Married capital.gain=0_33333 5094
+age=26_40 workclass=Private marital.status=Married capital.loss=0_1452 4811
+age=26_40 workclass=Private marital.status=Married hours.per.week=33_66 4738
+age=26_40 workclass=Private sex=Male capital.gain=0_33333 5982
+age=26_40 workclass=Private sex=Male capital.loss=0_1452 5663
+age=26_40 workclass=Private sex=Male hours.per.week=33_66 5643
+age=26_40 workclass=Private sex=Male income_nominal=0 3450
+age=26_40 workclass=Private capital.gain=0_33333 capital.loss=0_1452 8249
+age=26_40 workclass=Private capital.gain=0_33333 hours.per.week=33_66 7821
+age=26_40 workclass=Private capital.gain=0_33333 income_nominal=0 5747
+age=26_40 workclass=Private capital.loss=0_1452 hours.per.week=33_66 7454
+age=26_40 workclass=Private capital.loss=0_1452 income_nominal=0 5596
+age=26_40 workclass=Private hours.per.week=33_66 income_nominal=0 5050
+age=26_40 education.num=9 capital.gain=0_33333 capital.loss=0_1452 3868
+age=26_40 education.num=9 capital.gain=0_33333 hours.per.week=33_66 3554
+age=26_40 education.num=9 capital.loss=0_1452 hours.per.week=33_66 3407
+age=26_40 marital.status=Single capital.gain=0_33333 capital.loss=0_1452 4823
+age=26_40 marital.status=Single capital.gain=0_33333 hours.per.week=33_66 4337
+age=26_40 marital.status=Single capital.gain=0_33333 income_nominal=0 4401
+age=26_40 marital.status=Single capital.loss=0_1452 hours.per.week=33_66 4194
+age=26_40 marital.status=Single capital.loss=0_1452 income_nominal=0 4289
+age=26_40 marital.status=Single hours.per.week=33_66 income_nominal=0 3789
+age=26_40 marital.status=Married sex=Male capital.gain=0_33333 6742
+age=26_40 marital.status=Married sex=Male capital.loss=0_1452 6344
+age=26_40 marital.status=Married sex=Male hours.per.week=33_66 6294
+age=26_40 marital.status=Married sex=Male income_nominal=1 3605
+age=26_40 marital.status=Married capital.gain=0_33333 capital.loss=0_1452 7089
+age=26_40 marital.status=Married capital.gain=0_33333 hours.per.week=33_66 6890
+age=26_40 marital.status=Married capital.gain=0_33333 income_nominal=0 3651
+age=26_40 marital.status=Married capital.gain=0_33333 income_nominal=1 3971
+age=26_40 marital.status=Married capital.loss=0_1452 hours.per.week=33_66 6472
+age=26_40 marital.status=Married capital.loss=0_1452 income_nominal=0 3535
+age=26_40 marital.status=Married capital.loss=0_1452 income_nominal=1 3643
+age=26_40 marital.status=Married hours.per.week=33_66 income_nominal=1 3768
+age=26_40 sex=Female capital.gain=0_33333 capital.loss=0_1452 3617
+age=26_40 sex=Male capital.gain=0_33333 capital.loss=0_1452 8295
+age=26_40 sex=Male capital.gain=0_33333 hours.per.week=33_66 8145
+age=26_40 sex=Male capital.gain=0_33333 income_nominal=0 4970
+age=26_40 sex=Male capital.gain=0_33333 income_nominal=1 3899
+age=26_40 sex=Male capital.loss=0_1452 hours.per.week=33_66 7673
+age=26_40 sex=Male capital.loss=0_1452 income_nominal=0 4805
+age=26_40 sex=Male capital.loss=0_1452 income_nominal=1 3576
+age=26_40 sex=Male hours.per.week=33_66 income_nominal=0 4453
+age=26_40 sex=Male hours.per.week=33_66 income_nominal=1 3762
+age=26_40 capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 10584
+age=26_40 capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 7824
+age=26_40 capital.gain=0_33333 capital.loss=0_1452 income_nominal=1 4088
+age=26_40 capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 6984
+age=26_40 capital.gain=0_33333 hours.per.week=33_66 income_nominal=1 4243
+age=26_40 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 6774
+age=26_40 capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 3892
+workclass=Private education.num=9 marital.status=Single capital.gain=0_33333 4662
+workclass=Private education.num=9 marital.status=Single capital.loss=0_1452 4543
+workclass=Private education.num=9 marital.status=Single hours.per.week=33_66 3673
+workclass=Private education.num=9 marital.status=Single income_nominal=0 4560
+workclass=Private education.num=9 marital.status=Married capital.gain=0_33333 3637
+workclass=Private education.num=9 marital.status=Married capital.loss=0_1452 3495
+workclass=Private education.num=9 sex=Male capital.gain=0_33333 5435
+workclass=Private education.num=9 sex=Male capital.loss=0_1452 5246
+workclass=Private education.num=9 sex=Male hours.per.week=33_66 4776
+workclass=Private education.num=9 sex=Male income_nominal=0 4440
+workclass=Private education.num=9 capital.gain=0_33333 capital.loss=0_1452 8025
+workclass=Private education.num=9 capital.gain=0_33333 hours.per.week=33_66 6889
+workclass=Private education.num=9 capital.gain=0_33333 income_nominal=0 7145
+workclass=Private education.num=9 capital.loss=0_1452 hours.per.week=33_66 6668
+workclass=Private education.num=9 capital.loss=0_1452 income_nominal=0 6960
+workclass=Private education.num=9 hours.per.week=33_66 income_nominal=0 5808
+workclass=Private education.num=10 marital.status=Single capital.gain=0_33333 3590
+workclass=Private education.num=10 marital.status=Single capital.loss=0_1452 3515
+workclass=Private education.num=10 marital.status=Single income_nominal=0 3486
+workclass=Private education.num=10 sex=Male capital.gain=0_33333 3313
+workclass=Private education.num=10 capital.gain=0_33333 capital.loss=0_1452 5402
+workclass=Private education.num=10 capital.gain=0_33333 hours.per.week=33_66 4164
+workclass=Private education.num=10 capital.gain=0_33333 income_nominal=0 4649
+workclass=Private education.num=10 capital.loss=0_1452 hours.per.week=33_66 4011
+workclass=Private education.num=10 capital.loss=0_1452 income_nominal=0 4532
+workclass=Private education.num=10 hours.per.week=33_66 income_nominal=0 3290
+workclass=Private education.num=13 capital.gain=0_33333 capital.loss=0_1452 3478
+workclass=Private marital.status=Single sex=Female capital.gain=0_33333 7201
+workclass=Private marital.status=Single sex=Female capital.loss=0_1452 7032
+workclass=Private marital.status=Single sex=Female hours.per.week=33_66 5034
+workclass=Private marital.status=Single sex=Female income_nominal=0 6933
+workclass=Private marital.status=Single sex=Male capital.gain=0_33333 6599
+workclass=Private marital.status=Single sex=Male capital.loss=0_1452 6421
+workclass=Private marital.status=Single sex=Male hours.per.week=33_66 5111
+workclass=Private marital.status=Single sex=Male income_nominal=0 6148
+workclass=Private marital.status=Single capital.gain=0_33333 capital.loss=0_1452 13437
+workclass=Private marital.status=Single capital.gain=0_33333 hours.per.week=0_33 3475
+workclass=Private marital.status=Single capital.gain=0_33333 hours.per.week=33_66 10136
+workclass=Private marital.status=Single capital.gain=0_33333 income_nominal=0 13077
+workclass=Private marital.status=Single capital.loss=0_1452 hours.per.week=0_33 3407
+workclass=Private marital.status=Single capital.loss=0_1452 hours.per.week=33_66 9866
+workclass=Private marital.status=Single capital.loss=0_1452 income_nominal=0 12778
+workclass=Private marital.status=Single hours.per.week=0_33 income_nominal=0 3460
+workclass=Private marital.status=Single hours.per.week=33_66 income_nominal=0 9456
+workclass=Private marital.status=Married sex=Male capital.gain=0_33333 9265
+workclass=Private marital.status=Married sex=Male capital.loss=0_1452 8782
+workclass=Private marital.status=Married sex=Male hours.per.week=33_66 8465
+workclass=Private marital.status=Married sex=Male income_nominal=0 5417
+workclass=Private marital.status=Married sex=Male income_nominal=1 3915
+workclass=Private marital.status=Married capital.gain=0_33333 capital.loss=0_1452 10025
+workclass=Private marital.status=Married capital.gain=0_33333 hours.per.week=33_66 9417
+workclass=Private marital.status=Married capital.gain=0_33333 income_nominal=0 6296
+workclass=Private marital.status=Married capital.gain=0_33333 income_nominal=1 4345
+workclass=Private marital.status=Married capital.loss=0_1452 hours.per.week=33_66 8926
+workclass=Private marital.status=Married capital.loss=0_1452 income_nominal=0 6109
+workclass=Private marital.status=Married capital.loss=0_1452 income_nominal=1 3991
+workclass=Private marital.status=Married hours.per.week=33_66 income_nominal=0 5400
+workclass=Private marital.status=Married hours.per.week=33_66 income_nominal=1 4086
+workclass=Private occupation=Prof-specialty capital.gain=0_33333 capital.loss=0_1452 3914
+workclass=Private sex=Female capital.gain=0_33333 capital.loss=0_1452 8336
+workclass=Private sex=Female capital.gain=0_33333 hours.per.week=33_66 6045
+workclass=Private sex=Female capital.gain=0_33333 income_nominal=0 7811
+workclass=Private sex=Female capital.loss=0_1452 hours.per.week=33_66 5888
+workclass=Private sex=Female capital.loss=0_1452 income_nominal=0 7637
+workclass=Private sex=Female hours.per.week=33_66 income_nominal=0 5405
+workclass=Private sex=Male capital.gain=0_33333 capital.loss=0_1452 15126
+workclass=Private sex=Male capital.gain=0_33333 hours.per.week=33_66 13508
+workclass=Private sex=Male capital.gain=0_33333 income_nominal=0 11562
+workclass=Private sex=Male capital.gain=0_33333 income_nominal=1 4302
+workclass=Private sex=Male capital.loss=0_1452 hours.per.week=33_66 12904
+workclass=Private sex=Male capital.loss=0_1452 income_nominal=0 11250
+workclass=Private sex=Male capital.loss=0_1452 income_nominal=1 3953
+workclass=Private sex=Male hours.per.week=33_66 income_nominal=0 9451
+workclass=Private sex=Male hours.per.week=33_66 income_nominal=1 4125
+workclass=Private capital.gain=0_33333 capital.loss=0_1452 hours.per.week=0_33 4363
+workclass=Private capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 18714
+workclass=Private capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 18882
+workclass=Private capital.gain=0_33333 capital.loss=0_1452 income_nominal=1 4580
+workclass=Private capital.gain=0_33333 hours.per.week=0_33 income_nominal=0 4242
+workclass=Private capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 14856
+workclass=Private capital.gain=0_33333 hours.per.week=33_66 income_nominal=1 4697
+workclass=Private capital.loss=0_1452 hours.per.week=0_33 income_nominal=0 4157
+workclass=Private capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 14464
+workclass=Private capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 4328
+education.num=9 marital.status=Single capital.gain=0_33333 capital.loss=0_1452 5371
+education.num=9 marital.status=Single capital.gain=0_33333 hours.per.week=33_66 4364
+education.num=9 marital.status=Single capital.gain=0_33333 income_nominal=0 5361
+education.num=9 marital.status=Single capital.loss=0_1452 hours.per.week=33_66 4258
+education.num=9 marital.status=Single capital.loss=0_1452 income_nominal=0 5229
+education.num=9 marital.status=Single hours.per.week=33_66 income_nominal=0 4225
+education.num=9 marital.status=Married sex=Male capital.gain=0_33333 4358
+education.num=9 marital.status=Married sex=Male capital.loss=0_1452 4159
+education.num=9 marital.status=Married sex=Male hours.per.week=33_66 3886
+education.num=9 marital.status=Married capital.gain=0_33333 capital.loss=0_1452 4724
+education.num=9 marital.status=Married capital.gain=0_33333 hours.per.week=33_66 4312
+education.num=9 marital.status=Married capital.gain=0_33333 income_nominal=0 3462
+education.num=9 marital.status=Married capital.loss=0_1452 hours.per.week=33_66 4118
+education.num=9 marital.status=Married capital.loss=0_1452 income_nominal=0 3356
+education.num=9 sex=Female capital.gain=0_33333 capital.loss=0_1452 3295
+education.num=9 sex=Male capital.gain=0_33333 capital.loss=0_1452 6800
+education.num=9 sex=Male capital.gain=0_33333 hours.per.week=33_66 6163
+education.num=9 sex=Male capital.gain=0_33333 income_nominal=0 5660
+education.num=9 sex=Male capital.loss=0_1452 hours.per.week=33_66 5918
+education.num=9 sex=Male capital.loss=0_1452 income_nominal=0 5498
+education.num=9 sex=Male hours.per.week=33_66 income_nominal=0 4825
+education.num=9 capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 8352
+education.num=9 capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 8582
+education.num=9 capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 7155
+education.num=9 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 6958
+education.num=10 marital.status=Single capital.gain=0_33333 capital.loss=0_1452 4286
+education.num=10 marital.status=Single capital.gain=0_33333 income_nominal=0 4237
+education.num=10 marital.status=Single capital.loss=0_1452 income_nominal=0 4147
+education.num=10 sex=Male capital.gain=0_33333 capital.loss=0_1452 4269
+education.num=10 sex=Male capital.gain=0_33333 hours.per.week=33_66 3636
+education.num=10 sex=Male capital.gain=0_33333 income_nominal=0 3294
+education.num=10 sex=Male capital.loss=0_1452 hours.per.week=33_66 3466
+education.num=10 capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 5259
+education.num=10 capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 5747
+education.num=10 capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 4232
+education.num=10 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4110
+education.num=13 sex=Male capital.gain=0_33333 capital.loss=0_1452 3444
+education.num=13 sex=Male capital.gain=0_33333 hours.per.week=33_66 3300
+education.num=13 capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 4320
+marital.status=Single sex=Female capital.gain=0_33333 capital.loss=0_1452 8665
+marital.status=Single sex=Female capital.gain=0_33333 hours.per.week=33_66 6339
+marital.status=Single sex=Female capital.gain=0_33333 income_nominal=0 8485
+marital.status=Single sex=Female capital.loss=0_1452 hours.per.week=33_66 6193
+marital.status=Single sex=Female capital.loss=0_1452 income_nominal=0 8300
+marital.status=Single sex=Female hours.per.week=33_66 income_nominal=0 5975
+marital.status=Single sex=Male capital.gain=0_33333 capital.loss=0_1452 7976
+marital.status=Single sex=Male capital.gain=0_33333 hours.per.week=33_66 6424
+marital.status=Single sex=Male capital.gain=0_33333 income_nominal=0 7549
+marital.status=Single sex=Male capital.loss=0_1452 hours.per.week=33_66 6219
+marital.status=Single sex=Male capital.loss=0_1452 income_nominal=0 7352
+marital.status=Single sex=Male hours.per.week=33_66 income_nominal=0 5788
+marital.status=Single capital.gain=0_33333 capital.loss=0_1452 hours.per.week=0_33 3975
+marital.status=Single capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 12391
+marital.status=Single capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 15647
+marital.status=Single capital.gain=0_33333 hours.per.week=0_33 income_nominal=0 4024
+marital.status=Single capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 11762
+marital.status=Single capital.loss=0_1452 hours.per.week=0_33 income_nominal=0 3943
+marital.status=Single capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 11467
+marital.status=Married sex=Male capital.gain=0_33333 capital.loss=0_1452 12559
+marital.status=Married sex=Male capital.gain=0_33333 hours.per.week=33_66 11925
+marital.status=Married sex=Male capital.gain=0_33333 income_nominal=0 7574
+marital.status=Married sex=Male capital.gain=0_33333 income_nominal=1 5843
+marital.status=Married sex=Male capital.loss=0_1452 hours.per.week=33_66 11247
+marital.status=Married sex=Male capital.loss=0_1452 income_nominal=0 7333
+marital.status=Married sex=Male capital.loss=0_1452 income_nominal=1 5350
+marital.status=Married sex=Male hours.per.week=33_66 income_nominal=0 6489
+marital.status=Married sex=Male hours.per.week=33_66 income_nominal=1 5544
+marital.status=Married capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 12441
+marital.status=Married capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 8403
+marital.status=Married capital.gain=0_33333 capital.loss=0_1452 income_nominal=1 5917
+marital.status=Married capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 7265
+marital.status=Married capital.gain=0_33333 hours.per.week=33_66 income_nominal=1 6036
+marital.status=Married capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 7027
+marital.status=Married capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 5530
+occupation=Exec-managerial capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 3382
+occupation=Prof-specialty sex=Male capital.gain=0_33333 capital.loss=0_1452 3336
+occupation=Prof-specialty capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 4150
+occupation=Prof-specialty capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 3822
+occupation=Craft-repair sex=Male capital.gain=0_33333 capital.loss=0_1452 3689
+occupation=Craft-repair sex=Male capital.gain=0_33333 hours.per.week=33_66 3577
+occupation=Craft-repair sex=Male capital.loss=0_1452 hours.per.week=33_66 3414
+occupation=Craft-repair capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 3595
+sex=Female capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 7485
+sex=Female capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 9370
+sex=Female capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 6752
+sex=Female capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 6602
+sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 17347
+sex=Male capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 14680
+sex=Male capital.gain=0_33333 capital.loss=0_1452 income_nominal=1 5855
+sex=Male capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 12275
+sex=Male capital.gain=0_33333 hours.per.week=33_66 income_nominal=1 6074
+sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 11892
+sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 5574
+capital.gain=0_33333 capital.loss=0_1452 hours.per.week=0_33 income_nominal=0 5053
+capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 18492
+capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 6340
+
+Size of set of large itemsets L(5): 216
+
+Large Itemsets L(5):
+age=0_25 workclass=Private education.num=9 capital.gain=0_33333 capital.loss=0_1452 4010
+age=0_25 workclass=Private education.num=9 capital.gain=0_33333 hours.per.week=33_66 3385
+age=0_25 workclass=Private education.num=9 capital.gain=0_33333 income_nominal=0 3881
+age=0_25 workclass=Private education.num=9 capital.loss=0_1452 hours.per.week=33_66 3300
+age=0_25 workclass=Private education.num=9 capital.loss=0_1452 income_nominal=0 3788
+age=0_25 workclass=Private marital.status=Single sex=Female capital.gain=0_33333 4177
+age=0_25 workclass=Private marital.status=Single sex=Female capital.loss=0_1452 4083
+age=0_25 workclass=Private marital.status=Single sex=Female income_nominal=0 4098
+age=0_25 workclass=Private marital.status=Single sex=Male capital.gain=0_33333 4703
+age=0_25 workclass=Private marital.status=Single sex=Male capital.loss=0_1452 4597
+age=0_25 workclass=Private marital.status=Single sex=Male hours.per.week=33_66 3466
+age=0_25 workclass=Private marital.status=Single sex=Male income_nominal=0 4553
+age=0_25 workclass=Private marital.status=Single capital.gain=0_33333 capital.loss=0_1452 8670
+age=0_25 workclass=Private marital.status=Single capital.gain=0_33333 hours.per.week=33_66 6161
+age=0_25 workclass=Private marital.status=Single capital.gain=0_33333 income_nominal=0 8647
+age=0_25 workclass=Private marital.status=Single capital.loss=0_1452 hours.per.week=33_66 6018
+age=0_25 workclass=Private marital.status=Single capital.loss=0_1452 income_nominal=0 8457
+age=0_25 workclass=Private marital.status=Single hours.per.week=33_66 income_nominal=0 5941
+age=0_25 workclass=Private marital.status=Married capital.gain=0_33333 capital.loss=0_1452 3445
+age=0_25 workclass=Private marital.status=Married capital.gain=0_33333 hours.per.week=33_66 3265
+age=0_25 workclass=Private sex=Female capital.gain=0_33333 capital.loss=0_1452 4684
+age=0_25 workclass=Private sex=Female capital.gain=0_33333 income_nominal=0 4552
+age=0_25 workclass=Private sex=Female capital.loss=0_1452 income_nominal=0 4446
+age=0_25 workclass=Private sex=Male capital.gain=0_33333 capital.loss=0_1452 7431
+age=0_25 workclass=Private sex=Male capital.gain=0_33333 hours.per.week=33_66 6250
+age=0_25 workclass=Private sex=Male capital.gain=0_33333 income_nominal=0 6691
+age=0_25 workclass=Private sex=Male capital.loss=0_1452 hours.per.week=33_66 6040
+age=0_25 workclass=Private sex=Male capital.loss=0_1452 income_nominal=0 6524
+age=0_25 workclass=Private sex=Male hours.per.week=33_66 income_nominal=0 5304
+age=0_25 workclass=Private capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 9118
+age=0_25 workclass=Private capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 10965
+age=0_25 workclass=Private capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 8255
+age=0_25 workclass=Private capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 8050
+age=0_25 education.num=9 capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 3835
+age=0_25 education.num=9 capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 4330
+age=0_25 education.num=9 capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 3635
+age=0_25 education.num=9 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 3553
+age=0_25 education.num=10 capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 3534
+age=0_25 marital.status=Single sex=Female capital.gain=0_33333 capital.loss=0_1452 4683
+age=0_25 marital.status=Single sex=Female capital.gain=0_33333 income_nominal=0 4693
+age=0_25 marital.status=Single sex=Female capital.loss=0_1452 income_nominal=0 4593
+age=0_25 marital.status=Single sex=Male capital.gain=0_33333 capital.loss=0_1452 5369
+age=0_25 marital.status=Single sex=Male capital.gain=0_33333 hours.per.week=33_66 4076
+age=0_25 marital.status=Single sex=Male capital.gain=0_33333 income_nominal=0 5301
+age=0_25 marital.status=Single sex=Male capital.loss=0_1452 hours.per.week=33_66 3975
+age=0_25 marital.status=Single sex=Male capital.loss=0_1452 income_nominal=0 5181
+age=0_25 marital.status=Single sex=Male hours.per.week=33_66 income_nominal=0 3880
+age=0_25 marital.status=Single capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 7037
+age=0_25 marital.status=Single capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 9770
+age=0_25 marital.status=Single capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 6925
+age=0_25 marital.status=Single capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 6770
+age=0_25 marital.status=Married sex=Male capital.gain=0_33333 capital.loss=0_1452 3644
+age=0_25 marital.status=Married sex=Male capital.gain=0_33333 hours.per.week=33_66 3535
+age=0_25 marital.status=Married sex=Male capital.loss=0_1452 hours.per.week=33_66 3366
+age=0_25 marital.status=Married capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 3896
+age=0_25 sex=Female capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 3611
+age=0_25 sex=Female capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 5093
+age=0_25 sex=Female capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 3421
+age=0_25 sex=Female capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 3346
+age=0_25 sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 7322
+age=0_25 sex=Male capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 7791
+age=0_25 sex=Male capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 6344
+age=0_25 sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 6172
+age=0_25 capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 9518
+age=26_40 workclass=Private marital.status=Single capital.gain=0_33333 capital.loss=0_1452 3487
+age=26_40 workclass=Private marital.status=Married sex=Male capital.gain=0_33333 4499
+age=26_40 workclass=Private marital.status=Married sex=Male capital.loss=0_1452 4242
+age=26_40 workclass=Private marital.status=Married sex=Male hours.per.week=33_66 4288
+age=26_40 workclass=Private marital.status=Married capital.gain=0_33333 capital.loss=0_1452 4762
+age=26_40 workclass=Private marital.status=Married capital.gain=0_33333 hours.per.week=33_66 4693
+age=26_40 workclass=Private marital.status=Married capital.loss=0_1452 hours.per.week=33_66 4428
+age=26_40 workclass=Private sex=Male capital.gain=0_33333 capital.loss=0_1452 5616
+age=26_40 workclass=Private sex=Male capital.gain=0_33333 hours.per.week=33_66 5600
+age=26_40 workclass=Private sex=Male capital.gain=0_33333 income_nominal=0 3450
+age=26_40 workclass=Private sex=Male capital.loss=0_1452 hours.per.week=33_66 5293
+age=26_40 workclass=Private sex=Male capital.loss=0_1452 income_nominal=0 3343
+age=26_40 workclass=Private capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 7405
+age=26_40 workclass=Private capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 5596
+age=26_40 workclass=Private capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 5050
+age=26_40 workclass=Private capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4909
+age=26_40 education.num=9 capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 3396
+age=26_40 marital.status=Single capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 4185
+age=26_40 marital.status=Single capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 4289
+age=26_40 marital.status=Single capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 3789
+age=26_40 marital.status=Single capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 3684
+age=26_40 marital.status=Married sex=Male capital.gain=0_33333 capital.loss=0_1452 6264
+age=26_40 marital.status=Married sex=Male capital.gain=0_33333 hours.per.week=33_66 6227
+age=26_40 marital.status=Married sex=Male capital.gain=0_33333 income_nominal=1 3525
+age=26_40 marital.status=Married sex=Male capital.loss=0_1452 hours.per.week=33_66 5841
+age=26_40 marital.status=Married sex=Male hours.per.week=33_66 income_nominal=1 3412
+age=26_40 marital.status=Married capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 6399
+age=26_40 marital.status=Married capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 3535
+age=26_40 marital.status=Married capital.gain=0_33333 capital.loss=0_1452 income_nominal=1 3554
+age=26_40 marital.status=Married capital.gain=0_33333 hours.per.week=33_66 income_nominal=1 3695
+age=26_40 marital.status=Married capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 3382
+age=26_40 sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 7603
+age=26_40 sex=Male capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 4805
+age=26_40 sex=Male capital.gain=0_33333 capital.loss=0_1452 income_nominal=1 3490
+age=26_40 sex=Male capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 4453
+age=26_40 sex=Male capital.gain=0_33333 hours.per.week=33_66 income_nominal=1 3692
+age=26_40 sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4295
+age=26_40 sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 3378
+age=26_40 capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 6774
+age=26_40 capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 3810
+workclass=Private education.num=9 marital.status=Single capital.gain=0_33333 capital.loss=0_1452 4541
+workclass=Private education.num=9 marital.status=Single capital.gain=0_33333 hours.per.week=33_66 3673
+workclass=Private education.num=9 marital.status=Single capital.gain=0_33333 income_nominal=0 4558
+workclass=Private education.num=9 marital.status=Single capital.loss=0_1452 hours.per.week=33_66 3580
+workclass=Private education.num=9 marital.status=Single capital.loss=0_1452 income_nominal=0 4446
+workclass=Private education.num=9 marital.status=Single hours.per.week=33_66 income_nominal=0 3578
+workclass=Private education.num=9 marital.status=Married capital.gain=0_33333 capital.loss=0_1452 3484
+workclass=Private education.num=9 sex=Male capital.gain=0_33333 capital.loss=0_1452 5235
+workclass=Private education.num=9 sex=Male capital.gain=0_33333 hours.per.week=33_66 4766
+workclass=Private education.num=9 sex=Male capital.gain=0_33333 income_nominal=0 4439
+workclass=Private education.num=9 sex=Male capital.loss=0_1452 hours.per.week=33_66 4593
+workclass=Private education.num=9 sex=Male capital.loss=0_1452 income_nominal=0 4321
+workclass=Private education.num=9 sex=Male hours.per.week=33_66 income_nominal=0 3820
+workclass=Private education.num=9 capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 6657
+workclass=Private education.num=9 capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 6958
+workclass=Private education.num=9 capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 5808
+workclass=Private education.num=9 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 5655
+workclass=Private education.num=10 marital.status=Single capital.gain=0_33333 capital.loss=0_1452 3511
+workclass=Private education.num=10 marital.status=Single capital.gain=0_33333 income_nominal=0 3485
+workclass=Private education.num=10 marital.status=Single capital.loss=0_1452 income_nominal=0 3415
+workclass=Private education.num=10 capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 4003
+workclass=Private education.num=10 capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 4531
+workclass=Private education.num=10 capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 3290
+workclass=Private marital.status=Single sex=Female capital.gain=0_33333 capital.loss=0_1452 7026
+workclass=Private marital.status=Single sex=Female capital.gain=0_33333 hours.per.week=33_66 5031
+workclass=Private marital.status=Single sex=Female capital.gain=0_33333 income_nominal=0 6931
+workclass=Private marital.status=Single sex=Female capital.loss=0_1452 hours.per.week=33_66 4912
+workclass=Private marital.status=Single sex=Female capital.loss=0_1452 income_nominal=0 6780
+workclass=Private marital.status=Single sex=Female hours.per.week=33_66 income_nominal=0 4781
+workclass=Private marital.status=Single sex=Male capital.gain=0_33333 capital.loss=0_1452 6411
+workclass=Private marital.status=Single sex=Male capital.gain=0_33333 hours.per.week=33_66 5105
+workclass=Private marital.status=Single sex=Male capital.gain=0_33333 income_nominal=0 6146
+workclass=Private marital.status=Single sex=Male capital.loss=0_1452 hours.per.week=33_66 4954
+workclass=Private marital.status=Single sex=Male capital.loss=0_1452 income_nominal=0 5998
+workclass=Private marital.status=Single sex=Male hours.per.week=33_66 income_nominal=0 4675
+workclass=Private marital.status=Single capital.gain=0_33333 capital.loss=0_1452 hours.per.week=0_33 3401
+workclass=Private marital.status=Single capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 9857
+workclass=Private marital.status=Single capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 12774
+workclass=Private marital.status=Single capital.gain=0_33333 hours.per.week=0_33 income_nominal=0 3456
+workclass=Private marital.status=Single capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 9456
+workclass=Private marital.status=Single capital.loss=0_1452 hours.per.week=0_33 income_nominal=0 3387
+workclass=Private marital.status=Single capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 9232
+workclass=Private marital.status=Married sex=Male capital.gain=0_33333 capital.loss=0_1452 8715
+workclass=Private marital.status=Married sex=Male capital.gain=0_33333 hours.per.week=33_66 8403
+workclass=Private marital.status=Married sex=Male capital.gain=0_33333 income_nominal=0 5416
+workclass=Private marital.status=Married sex=Male capital.gain=0_33333 income_nominal=1 3849
+workclass=Private marital.status=Married sex=Male capital.loss=0_1452 hours.per.week=33_66 7950
+workclass=Private marital.status=Married sex=Male capital.loss=0_1452 income_nominal=0 5252
+workclass=Private marital.status=Married sex=Male capital.loss=0_1452 income_nominal=1 3530
+workclass=Private marital.status=Married sex=Male hours.per.week=33_66 income_nominal=0 4776
+workclass=Private marital.status=Married sex=Male hours.per.week=33_66 income_nominal=1 3689
+workclass=Private marital.status=Married capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 8857
+workclass=Private marital.status=Married capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 6108
+workclass=Private marital.status=Married capital.gain=0_33333 capital.loss=0_1452 income_nominal=1 3917
+workclass=Private marital.status=Married capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 5400
+workclass=Private marital.status=Married capital.gain=0_33333 hours.per.week=33_66 income_nominal=1 4017
+workclass=Private marital.status=Married capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 5232
+workclass=Private marital.status=Married capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 3694
+workclass=Private sex=Female capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 5878
+workclass=Private sex=Female capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 7635
+workclass=Private sex=Female capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 5405
+workclass=Private sex=Female capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 5288
+workclass=Private sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 12836
+workclass=Private sex=Male capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 11247
+workclass=Private sex=Male capital.gain=0_33333 capital.loss=0_1452 income_nominal=1 3879
+workclass=Private sex=Male capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 9451
+workclass=Private sex=Male capital.gain=0_33333 hours.per.week=33_66 income_nominal=1 4057
+workclass=Private sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 9176
+workclass=Private sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 3728
+workclass=Private capital.gain=0_33333 capital.loss=0_1452 hours.per.week=0_33 income_nominal=0 4152
+workclass=Private capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 14464
+workclass=Private capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 4250
+education.num=9 marital.status=Single capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 4252
+education.num=9 marital.status=Single capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 5226
+education.num=9 marital.status=Single capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 4224
+education.num=9 marital.status=Single capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4120
+education.num=9 marital.status=Married sex=Male capital.gain=0_33333 capital.loss=0_1452 4142
+education.num=9 marital.status=Married sex=Male capital.gain=0_33333 hours.per.week=33_66 3869
+education.num=9 marital.status=Married sex=Male capital.loss=0_1452 hours.per.week=33_66 3689
+education.num=9 marital.status=Married capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 4100
+education.num=9 marital.status=Married capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 3356
+education.num=9 sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 5899
+education.num=9 sex=Male capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 5496
+education.num=9 sex=Male capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 4824
+education.num=9 sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4678
+education.num=9 capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 6957
+education.num=10 marital.status=Single capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 4146
+education.num=10 sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 3457
+education.num=10 capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4110
+marital.status=Single sex=Female capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 6183
+marital.status=Single sex=Female capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 8298
+marital.status=Single sex=Female capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 5975
+marital.status=Single sex=Female capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 5845
+marital.status=Single sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 6208
+marital.status=Single sex=Male capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 7349
+marital.status=Single sex=Male capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 5787
+marital.status=Single sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 5622
+marital.status=Single capital.gain=0_33333 capital.loss=0_1452 hours.per.week=0_33 income_nominal=0 3939
+marital.status=Single capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 11466
+marital.status=Married sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 11139
+marital.status=Married sex=Male capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 7331
+marital.status=Married sex=Male capital.gain=0_33333 capital.loss=0_1452 income_nominal=1 5228
+marital.status=Married sex=Male capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 6488
+marital.status=Married sex=Male capital.gain=0_33333 hours.per.week=33_66 income_nominal=1 5437
+marital.status=Married sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 6270
+marital.status=Married sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 4977
+marital.status=Married capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 7026
+marital.status=Married capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 5415
+occupation=Craft-repair sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 3407
+sex=Female capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 6602
+sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 11890
+sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 5457
+
+Size of set of large itemsets L(6): 83
+
+Large Itemsets L(6):
+age=0_25 workclass=Private education.num=9 capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 3297
+age=0_25 workclass=Private education.num=9 capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 3786
+age=0_25 workclass=Private marital.status=Single sex=Female capital.gain=0_33333 capital.loss=0_1452 4079
+age=0_25 workclass=Private marital.status=Single sex=Female capital.gain=0_33333 income_nominal=0 4096
+age=0_25 workclass=Private marital.status=Single sex=Female capital.loss=0_1452 income_nominal=0 4005
+age=0_25 workclass=Private marital.status=Single sex=Male capital.gain=0_33333 capital.loss=0_1452 4591
+age=0_25 workclass=Private marital.status=Single sex=Male capital.gain=0_33333 hours.per.week=33_66 3463
+age=0_25 workclass=Private marital.status=Single sex=Male capital.gain=0_33333 income_nominal=0 4551
+age=0_25 workclass=Private marital.status=Single sex=Male capital.loss=0_1452 hours.per.week=33_66 3380
+age=0_25 workclass=Private marital.status=Single sex=Male capital.loss=0_1452 income_nominal=0 4452
+age=0_25 workclass=Private marital.status=Single sex=Male hours.per.week=33_66 income_nominal=0 3318
+age=0_25 workclass=Private marital.status=Single capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 6014
+age=0_25 workclass=Private marital.status=Single capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 8453
+age=0_25 workclass=Private marital.status=Single capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 5941
+age=0_25 workclass=Private marital.status=Single capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 5810
+age=0_25 workclass=Private sex=Female capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 4444
+age=0_25 workclass=Private sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 6026
+age=0_25 workclass=Private sex=Male capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 6521
+age=0_25 workclass=Private sex=Male capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 5304
+age=0_25 workclass=Private sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 5165
+age=0_25 workclass=Private capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 8050
+age=0_25 education.num=9 capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 3553
+age=0_25 marital.status=Single sex=Female capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 4591
+age=0_25 marital.status=Single sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 3969
+age=0_25 marital.status=Single sex=Male capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 5179
+age=0_25 marital.status=Single sex=Male capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 3880
+age=0_25 marital.status=Single sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 3788
+age=0_25 marital.status=Single capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 6770
+age=0_25 marital.status=Married sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 3353
+age=0_25 sex=Female capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 3346
+age=0_25 sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 6172
+age=26_40 workclass=Private marital.status=Married sex=Male capital.gain=0_33333 capital.loss=0_1452 4199
+age=26_40 workclass=Private marital.status=Married sex=Male capital.gain=0_33333 hours.per.week=33_66 4248
+age=26_40 workclass=Private marital.status=Married sex=Male capital.loss=0_1452 hours.per.week=33_66 3999
+age=26_40 workclass=Private marital.status=Married capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 4383
+age=26_40 workclass=Private sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 5250
+age=26_40 workclass=Private sex=Male capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 3343
+age=26_40 workclass=Private capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4909
+age=26_40 marital.status=Single capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 3684
+age=26_40 marital.status=Married sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 5774
+age=26_40 marital.status=Married sex=Male capital.gain=0_33333 hours.per.week=33_66 income_nominal=1 3345
+age=26_40 marital.status=Married capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 3309
+age=26_40 sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4295
+age=26_40 sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 3308
+workclass=Private education.num=9 marital.status=Single capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 3580
+workclass=Private education.num=9 marital.status=Single capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 4444
+workclass=Private education.num=9 marital.status=Single capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 3578
+workclass=Private education.num=9 marital.status=Single capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 3491
+workclass=Private education.num=9 sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 4583
+workclass=Private education.num=9 sex=Male capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 4320
+workclass=Private education.num=9 sex=Male capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 3820
+workclass=Private education.num=9 sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 3712
+workclass=Private education.num=9 capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 5655
+workclass=Private education.num=10 marital.status=Single capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 3414
+workclass=Private marital.status=Single sex=Female capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 4909
+workclass=Private marital.status=Single sex=Female capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 6778
+workclass=Private marital.status=Single sex=Female capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 4781
+workclass=Private marital.status=Single sex=Female capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4679
+workclass=Private marital.status=Single sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 4948
+workclass=Private marital.status=Single sex=Male capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 5996
+workclass=Private marital.status=Single sex=Male capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 4675
+workclass=Private marital.status=Single sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4553
+workclass=Private marital.status=Single capital.gain=0_33333 capital.loss=0_1452 hours.per.week=0_33 income_nominal=0 3383
+workclass=Private marital.status=Single capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 9232
+workclass=Private marital.status=Married sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 7888
+workclass=Private marital.status=Married sex=Male capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 5251
+workclass=Private marital.status=Married sex=Male capital.gain=0_33333 capital.loss=0_1452 income_nominal=1 3464
+workclass=Private marital.status=Married sex=Male capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 4776
+workclass=Private marital.status=Married sex=Male capital.gain=0_33333 hours.per.week=33_66 income_nominal=1 3627
+workclass=Private marital.status=Married sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4623
+workclass=Private marital.status=Married sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 3327
+workclass=Private marital.status=Married capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 5232
+workclass=Private marital.status=Married capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 3625
+workclass=Private sex=Female capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 5288
+workclass=Private sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 9176
+workclass=Private sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 3660
+education.num=9 marital.status=Single capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4119
+education.num=9 marital.status=Married sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 3672
+education.num=9 sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4677
+marital.status=Single sex=Female capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 5845
+marital.status=Single sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 5621
+marital.status=Married sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 6269
+marital.status=Married sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 4870
+
+Size of set of large itemsets L(7): 14
+
+Large Itemsets L(7):
+age=0_25 workclass=Private marital.status=Single sex=Female capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 4003
+age=0_25 workclass=Private marital.status=Single sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 3377
+age=0_25 workclass=Private marital.status=Single sex=Male capital.gain=0_33333 capital.loss=0_1452 income_nominal=0 4450
+age=0_25 workclass=Private marital.status=Single sex=Male capital.gain=0_33333 hours.per.week=33_66 income_nominal=0 3318
+age=0_25 workclass=Private marital.status=Single capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 5810
+age=0_25 workclass=Private sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 5165
+age=0_25 marital.status=Single sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 3788
+age=26_40 workclass=Private marital.status=Married sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 3959
+workclass=Private education.num=9 marital.status=Single capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 3491
+workclass=Private education.num=9 sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 3712
+workclass=Private marital.status=Single sex=Female capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4679
+workclass=Private marital.status=Single sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4553
+workclass=Private marital.status=Married sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4623
+workclass=Private marital.status=Married sex=Male capital.gain=0_33333 capital.loss=0_1452 hours.per.week=33_66 income_nominal=1 3265
+
+Best rules found:
+
+ 1. age=26_40 sex=Male capital.loss=0_1452 income_nominal=0 4805 ==> capital.gain=0_33333 4805    <conf:(1)> lift:(1.01) lev:(0) [24] conv:(24.5)
+ 2. workclass=Private marital.status=Single sex=Female hours.per.week=33_66 income_nominal=0 4781 ==> capital.gain=0_33333 4781    <conf:(1)> lift:(1.01) lev:(0) [24] conv:(24.37)
+ 3. workclass=Private marital.status=Married sex=Male hours.per.week=33_66 income_nominal=0 4776 ==> capital.gain=0_33333 4776    <conf:(1)> lift:(1.01) lev:(0) [24] conv:(24.35)
+ 4. workclass=Private marital.status=Single sex=Female capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4679 ==> capital.gain=0_33333 4679    <conf:(1)> lift:(1.01) lev:(0) [23] conv:(23.85)
+ 5. workclass=Private marital.status=Single sex=Male hours.per.week=33_66 income_nominal=0 4675 ==> capital.gain=0_33333 4675    <conf:(1)> lift:(1.01) lev:(0) [23] conv:(23.83)
+ 6. workclass=Private marital.status=Married sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4623 ==> capital.gain=0_33333 4623    <conf:(1)> lift:(1.01) lev:(0) [23] conv:(23.57)
+ 7. workclass=Private marital.status=Single sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4553 ==> capital.gain=0_33333 4553    <conf:(1)> lift:(1.01) lev:(0) [23] conv:(23.21)
+ 8. age=26_40 sex=Male hours.per.week=33_66 income_nominal=0 4453 ==> capital.gain=0_33333 4453    <conf:(1)> lift:(1.01) lev:(0) [22] conv:(22.7)
+ 9. age=26_40 marital.status=Single income_nominal=0 4401 ==> capital.gain=0_33333 4401    <conf:(1)> lift:(1.01) lev:(0) [22] conv:(22.44)
+10. age=26_40 sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4295 ==> capital.gain=0_33333 4295    <conf:(1)> lift:(1.01) lev:(0) [21] conv:(21.9)
+11. age=26_40 marital.status=Single capital.loss=0_1452 income_nominal=0 4289 ==> capital.gain=0_33333 4289    <conf:(1)> lift:(1.01) lev:(0) [21] conv:(21.87)
+12. education.num=10 hours.per.week=33_66 income_nominal=0 4232 ==> capital.gain=0_33333 4232    <conf:(1)> lift:(1.01) lev:(0) [21] conv:(21.58)
+13. education.num=10 capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 4110 ==> capital.gain=0_33333 4110    <conf:(1)> lift:(1.01) lev:(0) [20] conv:(20.95)
+14. age=0_25 marital.status=Single sex=Male hours.per.week=33_66 income_nominal=0 3880 ==> capital.gain=0_33333 3880    <conf:(1)> lift:(1.01) lev:(0) [19] conv:(19.78)
+15. workclass=Private education.num=9 sex=Male hours.per.week=33_66 income_nominal=0 3820 ==> capital.gain=0_33333 3820    <conf:(1)> lift:(1.01) lev:(0) [19] conv:(19.47)
+16. age=26_40 marital.status=Single hours.per.week=33_66 income_nominal=0 3789 ==> capital.gain=0_33333 3789    <conf:(1)> lift:(1.01) lev:(0) [19] conv:(19.32)
+17. age=0_25 marital.status=Single sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 3788 ==> capital.gain=0_33333 3788    <conf:(1)> lift:(1.01) lev:(0) [19] conv:(19.31)
+18. workclass=Private education.num=9 sex=Male capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 3712 ==> capital.gain=0_33333 3712    <conf:(1)> lift:(1.01) lev:(0) [18] conv:(18.92)
+19. age=26_40 marital.status=Single capital.loss=0_1452 hours.per.week=33_66 income_nominal=0 3684 ==> capital.gain=0_33333 3684    <conf:(1)> lift:(1.01) lev:(0) [18] conv:(18.78)
+20. workclass=Private education.num=9 marital.status=Single hours.per.week=33_66 3673 ==> capital.gain=0_33333 3673    <conf:(1)> lift:(1.01) lev:(0) [18] conv:(18.73)
+

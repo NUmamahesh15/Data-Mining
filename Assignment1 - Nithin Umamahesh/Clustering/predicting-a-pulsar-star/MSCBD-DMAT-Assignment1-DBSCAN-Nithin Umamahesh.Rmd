@@ -1,0 +1,176 @@
+---
+title: "MSCBD-DMAT - Asignment 1 - Nithin Umamahesh"
+output: html_document
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+|  	                   |                      |
+|  -------------       |-------------         |  
+| Course 	             | MSCBD                |
+| Stage / Year         | 1                    |
+| Module 	             | DMAT                 | 
+| Semester             | 2                    |
+| Assignment           | Assignment 1 DBSCAN  | 
+| Date of Title Issue  | 9th Nov 2019         |
+| Assignment Deadline  | 18th Nov 2019 23:55  |
+| Assignment %         | 10 %                  | 
+| Assignment Submission     | Upload to moodle    |
+
+# Introduction
+
+In this practical you will work with pulsar star datset and examine them using DBSCAN with R.
+
+This notebook is inspired by the tutorial here http://www.sthda.com/english/wiki/wiki.php?id_contents=7940. Please read this tutorial in detail to fully understand.  
+
+## Issues with Weka and optics_dbscan package
+There is currently an issue with Weka and the DBSCAN package which means we cannot use it for Pracical 2. This issue is tracked online in a number of locations including: 
+  
+  * https://stackoverflow.com/questions/58780288/weka-3-9-with-dbscan-plugin-optics-optics-dbscan-error-problem-evaluating-c
+  * https://weka.8497.n7.nabble.com/Problem-filtering-instances-null-using-Weka-3-6-11-td31885.html#a44696
+
+## Submission 
+Your submission will be this markdown file with the following changes
+
+  1. The name of the file and the title will be updated to reflect your name and student number
+  2. 3 experiments for DBSCAN
+  3. 1 report per dataset
+
+
+## Tasks
+
+The following tasks should be completed in this practical 
+
+1. Install required packages
+2. Load Necessary Libraries
+3. Report on dataset
+
+When reporting on the datasets you must report on appropriate values for *eps* and *MinPnts*, and justify their selection. You should also include discussion on other values that you had tried on what the outcome was. 
+
+# 1. Install required packages.
+
+To install the required packages you can execute the following code at the command prompt 
+
+* install.packages("fpc")
+* install.packages("ggplot2")
+* install.packages("dbscan")
+
+Or using the packages tab on the right handside of RStudio and complete the following steps
+
+* selecting the "install" option
+* typing in the name of the package
+* clicking the "install" button, making appropriate selection. 
+
+# 2. Load Necessary Libraries
+Run the code segment below to load the necessary libraries. You can access information on these libraries by using the seach box in the help section in RStudio or by following the links provided below
+The following documentation is available online 
+```{r}
+if(!require(devtools)) install.packages("devtools")
+devtools::install_github("kassambara/factoextra")
+```
+* fpc https://cran.r-project.org/web/packages/fpc/fpc.pdf
+* ggplot2 https://www.rdocumentation.org/packages/ggplot2/versions/3.2.1
+You may also need the *dbscan* library
+```{r}
+library("fpc")
+library("ggplot2")
+library("factoextra")
+print("libraries loaded")
+```
+
+# 3. Report on the following datasets D1, D2, D3
+
+# 3.1 DATASET pulsar_stars
+
+Report on dataset pulsar_stars
+```{r}
+# load the dataset D1. It should be located in a folder called "datasets" in the same folder as the Rmarkdown file
+pulsar_stars = read.csv("pulsar_stars.csv", header = TRUE) # load the datasetset D1 from the folder 'datasets' using relative file path
+head(pulsar_stars,10) # output the first 10 elements of the dataset
+```
+
+```{r}
+str(pulsar_stars)
+```
+
+##  Optimal eps value
+The method proposed here consists of computing the he k-nearest neighbor distances in a matrix of points.
+
+The idea is to calculate, the average of the distances of every point to its k nearest neighbors. The value of k will be specified by the user and corresponds to MinPts.
+
+Next, these k-distances are plotted in an ascending order. The aim is to determine the “knee”, which corresponds to the optimal eps parameter.
+
+A knee corresponds to a threshold where a sharp change occurs along the k-distance curve.
+
+The function kNNdistplot() [in dbscan package] can be used to draw the k-distance plot:
+```{r}
+# We find the optimal epsilon value for forming two clusters
+dbscan::kNNdistplot(pulsar_stars, k =  2)  
+abline(h = 11, lty = 2) # draw a line at this eps value on the plot
+```
+
+
+## Clustering experiment 1 of 3
+```{r}
+eps_value = 11 # set a value for eps based on the value suggested by the plot
+MinPts_value = 10 # vary the MinPts_value until suitable clusters are generated
+db <- fpc::dbscan(pulsar_stars, eps = eps_value, MinPts = MinPts_value) # run the DBSCAN algorithm with the appropiate values
+#plot(db, d1, main = paste("eps:",eps_value,", MinPts:",MinPts_value, sep = " "), frame = FALSE) # Plot DBSCAN results
+fviz_cluster(db,pulsar_stars,geom = "point")
+```
+
+# From the above snapshot of the graph we can see that there are 6 clusters formed instead of two. This is because of the very low minimum points required to form a core point.
+
+
+# Experiment 2:
+```{r}
+eps_value = 11 # set a value for eps based on the value suggested by the plot
+MinPts_value = 25 # vary the MinPts_value until suitable clusters are generated
+db <- fpc::dbscan(pulsar_stars, eps = eps_value, MinPts = MinPts_value) # run the DBSCAN algorithm with the appropiate values
+fviz_cluster(db,pulsar_stars,geom = "point")
+```
+
+# From the above plot we can see that two clusters have been formed at min pts = 25
+
+# Eperiment 3:
+```{r}
+eps_value = 11 # set a value for eps based on the value suggested by the plot
+MinPts_value = 100 # vary the MinPts_value until suitable clusters are generated
+db <- fpc::dbscan(pulsar_stars, eps = eps_value, MinPts = MinPts_value) # run the DBSCAN algorithm with the appropiate values
+fviz_cluster(db,pulsar_stars,geom = "point")
+```
+
+# In the above graph only one cluster has been formed. This is because of the large minimum points required to form the core point.
+
+
+# Eperiment 4:
+```{r}
+eps_value = 11 # set a value for eps based on the value suggested by the plot
+MinPts_value = 1000 # vary the MinPts_value until suitable clusters are generated
+db <- fpc::dbscan(pulsar_stars, eps = eps_value, MinPts = MinPts_value) # run the DBSCAN algorithm with the appropiate values
+fviz_cluster(db,pulsar_stars,geom = "point")
+```
+
+# From the above figure we can see that no cluster has been formed due to the very large number of points required to form a core point. Hence all the points are considered as noise in the above graph.
+
+# Additional Information
+
+## Instructions on how to edit this RMarkdown document
+
+A cheatsheet for RMarkdown can be found [here] (https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+## Helpful Links 
+* How to read a CSV file http://www.cyclismo.org/tutorial/R/input.html#read
+
+
+
+

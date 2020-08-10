@@ -1,0 +1,48 @@
+=== Run information ===
+
+Scheme:       weka.associations.FPGrowth -P 2 -I -1 -N 20 -T 0 -C 0.7 -D 0.05 -U 0.35 -M 0.3
+Relation:     vote
+Instances:    435
+Attributes:   17
+              handicapped-infants
+              water-project-cost-sharing
+              adoption-of-the-budget-resolution
+              physician-fee-freeze
+              el-salvador-aid
+              religious-groups-in-schools
+              anti-satellite-test-ban
+              aid-to-nicaraguan-contras
+              mx-missile
+              immigration
+              synfuels-corporation-cutback
+              education-spending
+              superfund-right-to-sue
+              crime
+              duty-free-exports
+              export-administration-act-south-africa
+              Class
+=== Associator model (full training set) ===
+
+FPGrowth found 81 rules (displaying top 20)
+
+ 1. [physician-fee-freeze=n, aid-to-nicaraguan-contras=y, el-salvador-aid=n, superfund-right-to-sue=n]: 154 ==> [Class=democrat]: 153   <conf:(0.99)> lift:(1.62) lev:(0.13) conv:(29.74) 
+ 2. [physician-fee-freeze=n, anti-satellite-test-ban=y, el-salvador-aid=n, mx-missile=y]: 154 ==> [Class=democrat]: 153   <conf:(0.99)> lift:(1.62) lev:(0.13) conv:(29.74) 
+ 3. [Class=democrat, aid-to-nicaraguan-contras=y, el-salvador-aid=n, superfund-right-to-sue=n]: 155 ==> [physician-fee-freeze=n]: 153   <conf:(0.99)> lift:(1.74) lev:(0.15) conv:(22.33) 
+ 4. [Class=democrat, physician-fee-freeze=n, el-salvador-aid=n, superfund-right-to-sue=n]: 156 ==> [aid-to-nicaraguan-contras=y]: 153   <conf:(0.98)> lift:(1.76) lev:(0.15) conv:(17.3) 
+ 5. [physician-fee-freeze=n, el-salvador-aid=n, superfund-right-to-sue=n]: 157 ==> [Class=democrat, aid-to-nicaraguan-contras=y]: 153   <conf:(0.97)> lift:(1.94) lev:(0.17) conv:(15.66) 
+ 6. [Class=democrat, el-salvador-aid=n, superfund-right-to-sue=n]: 158 ==> [physician-fee-freeze=n, aid-to-nicaraguan-contras=y]: 153   <conf:(0.97)> lift:(2) lev:(0.18) conv:(13.56) 
+ 7. [Class=democrat, anti-satellite-test-ban=y, el-salvador-aid=n, mx-missile=y]: 158 ==> [physician-fee-freeze=n]: 153   <conf:(0.97)> lift:(1.71) lev:(0.15) conv:(11.38) 
+ 8. [physician-fee-freeze=n, education-spending=n, mx-missile=y]: 159 ==> [aid-to-nicaraguan-contras=y]: 153   <conf:(0.96)> lift:(1.73) lev:(0.15) conv:(10.08) 
+ 9. [aid-to-nicaraguan-contras=y, el-salvador-aid=n, superfund-right-to-sue=n]: 160 ==> [Class=democrat, physician-fee-freeze=n]: 153   <conf:(0.96)> lift:(1.7) lev:(0.14) conv:(8.74) 
+10. [aid-to-nicaraguan-contras=y, education-spending=n, mx-missile=y]: 162 ==> [physician-fee-freeze=n]: 153   <conf:(0.94)> lift:(1.66) lev:(0.14) conv:(7) 
+11. [Class=democrat, physician-fee-freeze=n, anti-satellite-test-ban=y, mx-missile=y]: 162 ==> [el-salvador-aid=n]: 153   <conf:(0.94)> lift:(1.98) lev:(0.17) conv:(8.45) 
+12. [education-spending=n, superfund-right-to-sue=n]: 163 ==> [Class=democrat]: 153   <conf:(0.94)> lift:(1.53) lev:(0.12) conv:(5.72) 
+13. [education-spending=n, superfund-right-to-sue=n]: 163 ==> [physician-fee-freeze=n]: 153   <conf:(0.94)> lift:(1.65) lev:(0.14) conv:(6.4) 
+14. [el-salvador-aid=n, superfund-right-to-sue=n]: 163 ==> [Class=democrat, physician-fee-freeze=n, aid-to-nicaraguan-contras=y]: 153   <conf:(0.94)> lift:(1.94) lev:(0.17) conv:(7.66) 
+15. [physician-fee-freeze=n, anti-satellite-test-ban=y, mx-missile=y]: 163 ==> [Class=democrat, el-salvador-aid=n]: 153   <conf:(0.94)> lift:(2.04) lev:(0.18) conv:(8.01) 
+16. [anti-satellite-test-ban=y, el-salvador-aid=n, mx-missile=y]: 164 ==> [Class=democrat, physician-fee-freeze=n]: 153   <conf:(0.93)> lift:(1.66) lev:(0.14) conv:(5.97) 
+17. [Class=democrat, physician-fee-freeze=n, aid-to-nicaraguan-contras=y, superfund-right-to-sue=n]: 165 ==> [el-salvador-aid=n]: 153   <conf:(0.93)> lift:(1.94) lev:(0.17) conv:(6.62) 
+18. [physician-fee-freeze=n, aid-to-nicaraguan-contras=y, superfund-right-to-sue=n]: 166 ==> [Class=democrat, el-salvador-aid=n]: 153   <conf:(0.92)> lift:(2) lev:(0.18) conv:(6.41) 
+19. [Class=democrat, physician-fee-freeze=n, el-salvador-aid=n, mx-missile=y]: 166 ==> [anti-satellite-test-ban=y]: 153   <conf:(0.92)> lift:(1.68) lev:(0.14) conv:(5.34) 
+20. [Class=democrat, aid-to-nicaraguan-contras=y, superfund-right-to-sue=n]: 167 ==> [physician-fee-freeze=n, el-salvador-aid=n]: 153   <conf:(0.92)> lift:(2.04) lev:(0.18) conv:(6.14) 
+

@@ -1,0 +1,108 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -I -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     vote
+Instances:    435
+Attributes:   17
+              handicapped-infants
+              water-project-cost-sharing
+              adoption-of-the-budget-resolution
+              physician-fee-freeze
+              el-salvador-aid
+              religious-groups-in-schools
+              anti-satellite-test-ban
+              aid-to-nicaraguan-contras
+              mx-missile
+              immigration
+              synfuels-corporation-cutback
+              education-spending
+              superfund-right-to-sue
+              crime
+              duty-free-exports
+              export-administration-act-south-africa
+              Class
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.45 (196 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 11
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 20
+
+Large Itemsets L(1):
+handicapped-infants=n 236
+adoption-of-the-budget-resolution=y 253
+physician-fee-freeze=n 247
+el-salvador-aid=y 212
+el-salvador-aid=n 208
+religious-groups-in-schools=y 272
+anti-satellite-test-ban=y 239
+aid-to-nicaraguan-contras=y 242
+mx-missile=n 206
+mx-missile=y 207
+immigration=y 216
+immigration=n 212
+synfuels-corporation-cutback=n 264
+education-spending=n 233
+superfund-right-to-sue=y 209
+superfund-right-to-sue=n 201
+crime=y 248
+duty-free-exports=n 233
+export-administration-act-south-africa=y 269
+Class=democrat 267
+
+Size of set of large itemsets L(2): 17
+
+Large Itemsets L(2):
+adoption-of-the-budget-resolution=y physician-fee-freeze=n 219
+adoption-of-the-budget-resolution=y anti-satellite-test-ban=y 201
+adoption-of-the-budget-resolution=y aid-to-nicaraguan-contras=y 215
+adoption-of-the-budget-resolution=y education-spending=n 201
+adoption-of-the-budget-resolution=y Class=democrat 231
+physician-fee-freeze=n anti-satellite-test-ban=y 197
+physician-fee-freeze=n aid-to-nicaraguan-contras=y 211
+physician-fee-freeze=n education-spending=n 202
+physician-fee-freeze=n Class=democrat 245
+el-salvador-aid=y religious-groups-in-schools=y 197
+el-salvador-aid=n aid-to-nicaraguan-contras=y 204
+el-salvador-aid=n Class=democrat 200
+religious-groups-in-schools=y crime=y 214
+anti-satellite-test-ban=y aid-to-nicaraguan-contras=y 210
+anti-satellite-test-ban=y Class=democrat 200
+aid-to-nicaraguan-contras=y Class=democrat 218
+education-spending=n Class=democrat 213
+
+Size of set of large itemsets L(3): 6
+
+Large Itemsets L(3):
+adoption-of-the-budget-resolution=y physician-fee-freeze=n aid-to-nicaraguan-contras=y 198
+adoption-of-the-budget-resolution=y physician-fee-freeze=n Class=democrat 219
+adoption-of-the-budget-resolution=y aid-to-nicaraguan-contras=y Class=democrat 203
+physician-fee-freeze=n aid-to-nicaraguan-contras=y Class=democrat 210
+physician-fee-freeze=n education-spending=n Class=democrat 201
+el-salvador-aid=n aid-to-nicaraguan-contras=y Class=democrat 197
+
+Size of set of large itemsets L(4): 1
+
+Large Itemsets L(4):
+adoption-of-the-budget-resolution=y physician-fee-freeze=n aid-to-nicaraguan-contras=y Class=democrat 198
+
+Best rules found:
+
+ 1. adoption-of-the-budget-resolution=y physician-fee-freeze=n 219 ==> Class=democrat 219    <conf:(1)> lift:(1.63) lev:(0.19) [84] conv:(84.58)
+ 2. adoption-of-the-budget-resolution=y physician-fee-freeze=n aid-to-nicaraguan-contras=y 198 ==> Class=democrat 198    <conf:(1)> lift:(1.63) lev:(0.18) [76] conv:(76.47)
+ 3. physician-fee-freeze=n aid-to-nicaraguan-contras=y 211 ==> Class=democrat 210    <conf:(1)> lift:(1.62) lev:(0.19) [80] conv:(40.74)
+ 4. physician-fee-freeze=n education-spending=n 202 ==> Class=democrat 201    <conf:(1)> lift:(1.62) lev:(0.18) [77] conv:(39.01)
+ 5. physician-fee-freeze=n 247 ==> Class=democrat 245    <conf:(0.99)> lift:(1.62) lev:(0.21) [93] conv:(31.8)
+ 6. el-salvador-aid=n Class=democrat 200 ==> aid-to-nicaraguan-contras=y 197    <conf:(0.98)> lift:(1.77) lev:(0.2) [85] conv:(22.18)
+ 7. el-salvador-aid=n 208 ==> aid-to-nicaraguan-contras=y 204    <conf:(0.98)> lift:(1.76) lev:(0.2) [88] conv:(18.46)
+ 8. adoption-of-the-budget-resolution=y aid-to-nicaraguan-contras=y Class=democrat 203 ==> physician-fee-freeze=n 198    <conf:(0.98)> lift:(1.72) lev:(0.19) [82] conv:(14.62)
+ 9. el-salvador-aid=n aid-to-nicaraguan-contras=y 204 ==> Class=democrat 197    <conf:(0.97)> lift:(1.57) lev:(0.17) [71] conv:(9.85)
+10. aid-to-nicaraguan-contras=y Class=democrat 218 ==> physician-fee-freeze=n 210    <conf:(0.96)> lift:(1.7) lev:(0.2) [86] conv:(10.47)
+
